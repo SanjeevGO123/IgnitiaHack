@@ -14,6 +14,8 @@ text_prompt = "A red car on a grassy field under a sunny sky"
 # Generate image using DALL-E API
 response = openai.Completion.create(
     engine="",
+
+
     prompt=text_prompt,
     max_tokens=50,
     temperature=0.7,
