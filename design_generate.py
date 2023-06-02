@@ -6,7 +6,7 @@ import matplotlib.pyplot as plt
 from PIL import Image
 
 # Set up OpenAI API credentials
-openai.api_key =
+openai.api_key =""
 
 # Text prompt describing the 3D model
 text_prompt = "A red car on a grassy field under a sunny sky"
