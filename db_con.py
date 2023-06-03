@@ -2,7 +2,7 @@ import pymysql as sqlcnt
 import os
 
 # Connect to the database
-conn = sqlcnt(host="localhost",user="root",password="sanjeev123",database="ignitiahack")
+conn = sqlcnt.connect(host="localhost",user="root",password="sanjeev123",database="ignitiahack")
 cursor = conn.cursor()
 
 # Run the detection script
