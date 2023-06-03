@@ -19,6 +19,7 @@ for i in os.listdir("D:\IgnitiaHack\\backend\data\images"):
     insert_query = "INSERT INTO license_plate (License_plate_No, timestamp) VALUES (%s, NOW()) ON DUPLICATE KEY UPDATE License_plate_No = VALUES(License_plate_No), timestamp = VALUES(timestamp)"
     values = (plate_number,)
     cursor.execute(insert_query, values)
+    cursor.execute("Delete from license_plate where License_plate_No = ''")
     conn.commit()
 
 # Close the database connection
